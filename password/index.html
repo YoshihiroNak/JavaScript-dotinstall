@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -14,8 +15,8 @@
         <fieldset>
             <legend>Option</legend>
             <label for="">
-                Length
-                <input type="range">
+                Length(<span id="password-length">8</span>)
+                <input type="range" id="slider" min="8" max="24" value="8">
             </label>
             <label for="">
                 Number
@@ -27,5 +28,6 @@
             </label>
         </fieldset>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
